@@ -1,3 +1,4 @@
+mysql -u root
 CREATE DATABASE IF NOT EXISTS scuola;
 USE scuola; 
  
@@ -75,3 +76,6 @@ order by cognome;
 select s.cognome
 from studenti s
 where YEAR(CURDATE())-YEAR(s.data_nascita)>=18;
+
+select s.cognome, s.nome, s.data_nascita
+from studenti;
