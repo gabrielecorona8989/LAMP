@@ -91,3 +91,4 @@ where s.cognome like 'C%';
 select v.voto
 from valutazioni v
 where v.matricola='1';
+
