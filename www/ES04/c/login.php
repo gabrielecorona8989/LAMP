@@ -55,7 +55,7 @@
             $_SESSION['tempo'] = null;
         } else {
            // $err_mess = "Account bloccato. Riprova tra $timeLeft secondi";
-            $err_mess = "<h2 style ='color:red'>Account bloccato. Riprova tra $timeLeft secondi</h2>";
+            $err_mess = "<h2 style='color:red'>Account bloccato. Riprova tra $timeLeft secondi</h2>";
          
         }
     }
