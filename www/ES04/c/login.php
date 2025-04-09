@@ -70,7 +70,7 @@
         <h2>Login</h2>
         <div id="error-container"><?= $err_mess ?></div>
         <form action="<?php ($_SERVER['PHP_SELF']) ?>" method="POST">
-            <input type="text" name="utente" id="utente" placeholder="utente" required>
+            <input type="text" name="utente" id="utente" placeholder="Utente" required>
             <br>
             <input type="password" name="password" id="password" placeholder="Password" required>
             <br>
