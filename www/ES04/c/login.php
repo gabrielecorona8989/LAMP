@@ -42,7 +42,7 @@
                 $_SESSION['prove']--;
                 $err_mess .= '. Tentativi rimasti: '.$_SESSION['prove'];
                 if($_SESSION['prove'] == 0) {
-                    $err_mess = "<h2 style='color:red'>'Tentativi esauriti, account bloccato per 60 secondi'</h2>";
+                    $err_mess = "<h2 style='color:red'>Tentativi esauriti, account bloccato per 60 secondi</h2>";
                     $_SESSION['tempo'] = $_SERVER['REQUEST_TIME'];
                 }
             }
@@ -55,7 +55,7 @@
             $_SESSION['tempo'] = null;
         } else {
            // $err_mess = "Account bloccato. Riprova tra $timeLeft secondi";
-            $err_mess = "<h2 style='color:red'>Account bloccato. Riprova tra $timeLeft secondi</h2>";
+            $err_mess = "<h1 style='color:red'>Account bloccato. Riprova tra $timeLeft secondi</h1>";
          
         }
     }
