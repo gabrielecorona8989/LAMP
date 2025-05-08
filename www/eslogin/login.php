@@ -16,7 +16,6 @@ if (!$conn) {
 }
 $html_out="Connessione al database riuscita.";
 
-//mettere query qui
 
 
 // Chiusura della connessione
@@ -25,3 +24,14 @@ mysqli_close($conn);
 $html_out ="Attenzione! Si è verificata un'eccezione." . $e->getMessage();
 }
 ?>
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Test della connessione connessione al database</h2>
+    <?=$html_out?>
+    
+</body>
+</html>
