@@ -21,4 +21,6 @@ input {
 }
 #header{
     background-color: #72f542;
+    width: 30%;
+    height: 50px;
 }
