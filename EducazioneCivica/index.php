@@ -13,6 +13,8 @@ function getProduct($barcode)
         return [false, $data];
     }
 }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
