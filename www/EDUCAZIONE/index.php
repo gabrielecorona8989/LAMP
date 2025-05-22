@@ -13,7 +13,19 @@ function getProduct($barcode)
         return [false, $data];
     }
 }
+if (isset($_GET['barcode'])) {
+    [$retval, $data] = getProduct($_GET['barcode']);
 
+    if ($retval) {
+        $htmlout .= '<h1>' . $data['product']['product_name'] . '</h1>';
+        $htmlout .= "<img src='" . $data['product']['image_front_small_url'] . "'>";
+        $htmlout .= '<h3>Ingredienti: </h3>';
+        $htmlout .= '<p>' . $data['product']['ingredients_text'] . '</p>';
+        $htmlout .= '<h3>Eco Score: </h3>';
+        $htmlout .= '<p>' . strtoupper($data['product']['ecoscore_grade']) . '</p>';
+    } else
+        $htmlout = '<h2>Prodotto non trovato</h2>';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
