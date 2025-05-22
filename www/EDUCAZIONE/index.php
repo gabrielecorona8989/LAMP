@@ -23,7 +23,7 @@ if (isset($_GET['barcode'])) {
         $htmlout .= '<p>' . $data['product']['ingredients_text'] . '</p>';
         $htmlout .= '<h3>Eco Score: </h3>';
         $htmlout .= '<p>' . strtoupper($data['product']['ecoscore_grade']) . '</p>';
-        $htmlout .= '<button  type="submit">'Aggiungi al carrello  '</button>';
+        $htmlout = '<button type="submit">'Cerca'</button>';
     } else
         $htmlout = '<h2>Prodotto non trovato</h2>';
 }
