@@ -25,8 +25,8 @@ input {
     padding: 5%;
     height: 50px;
     text-align: center;
-    color: white;
-    font-family: fantasy;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
 }
 body{
     margin: 0;
