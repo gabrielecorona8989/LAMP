@@ -36,7 +36,7 @@ if (isset($_GET['barcode'])) {
     <title>MangiaVerde</title>
 </head>
 <body>
-    <header id=header>
+    <header id=header style="margin:0;">
         <h2>Mangia Verde</h2>
         
     </header>
