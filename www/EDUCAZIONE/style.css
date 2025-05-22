@@ -22,6 +22,6 @@ input {
 #header{
     background-color: #72f542;
     padding: 5%;
-    margin: 0 auto;
+    height: 50px;
     text-align: center;
 }
