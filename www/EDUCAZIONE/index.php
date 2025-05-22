@@ -36,6 +36,9 @@ if (isset($_GET['barcode'])) {
     <title>MangiaVerde</title>
 </head>
 <body>
+    <header>
+        <div id=header></div>
+    </header>
     <div id="reader" style="width:300px;"></div>
     <div id="container">
         <form action="">
