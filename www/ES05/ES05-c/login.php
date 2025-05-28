@@ -43,5 +43,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <h2>Accedi</h2>
 
+    <form action="login.php" method="POST">
+        <input type="text"  name="utente" > <br>
+        <input type="password" name="password"> <br>
+        <input type="submit" name="login"> 
+
+
+
+
+
+    </form>
+
+
 </body>
 </html>

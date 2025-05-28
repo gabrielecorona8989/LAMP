@@ -26,6 +26,7 @@ INSERT INTO utente (UserID, Username, Password
 
 INSERT INTO utente VALUES 
 (NULL, 'mrossi', '123'),
+(NULL, 'gab', 'gab'),
 (NULL, 'hub', 'hub');
 
 SELECT * FROM utente;
