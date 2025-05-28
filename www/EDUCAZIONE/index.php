@@ -4,7 +4,9 @@ function getProduct($barcode)
 {
     $url = "https://world.openfoodfacts.org/api/v0/product/$barcode.json";
 
+    //esegue una richiesta HTTP GET all'URL costruito e salva la risposta nella variabile $response
     $response = file_get_contents($url);
+    //converte la risposta JSON in un array associativo PHP
     $data = json_decode($response, true);
 
     if ($data && $data['status'] == 1) {
@@ -13,9 +15,11 @@ function getProduct($barcode)
         return [false, $data];
     }
 }
+//se è presente un parametro a barre chiama getProduct
 if (isset($_GET['barcode'])) {
     [$retval, $data] = getProduct($_GET['barcode']);
-
+     
+    //se trova prodotto stampa nome,immagine,ingredienti e ecoscore
     if ($retval) {
         $htmlout .= '<h1>' . $data['product']['product_name'] . '</h1>';
         $htmlout .= "<img src='" . $data['product']['image_front_small_url'] . "'>";
@@ -48,6 +52,7 @@ if (isset($_GET['barcode'])) {
             <button type="submit">Cerca</button>
         </form>
 
+        
         <?= $htmlout ?>
 
     </div>
