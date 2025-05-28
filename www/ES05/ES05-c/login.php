@@ -1,7 +1,7 @@
 <?php
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'ES05_user');
-define('DB_PASSWORD', 'mia_password');
+define('DB_USERNAME', 'gab');
+define('DB_PASSWORD', 'gabbo');
 define('DB_NAME', 'ES05');
 
 session_start();
