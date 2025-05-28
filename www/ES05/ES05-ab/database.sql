@@ -21,8 +21,8 @@ CREATE TABLE IF NOT EXISTS utente (
 SHOW TABLES; 
 SHOW CREATE TABLE utente;
 
-INSERT INTO utente (UserID, Username, Password 
-) VALUES (NULL, 'utente', 'prova');
+INSERT INTO utente (UserID, Username, Password )
+ VALUES (NULL, 'utente', 'prova');
 
 INSERT INTO utente VALUES 
 (NULL, 'mrossi', '123'),
